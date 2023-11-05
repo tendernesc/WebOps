@@ -1,0 +1,37 @@
+@import 'variables';
+
+.awards-wrapper{
+    width: $width-wrapper;
+    margin: 0 auto;
+    display: block;
+
+    .awards-wrapper__info{
+        font-family: $popins;
+        font-size: 39.056px;
+        font-weight: 700;
+        margin-top: 140px;
+        margin-bottom: 85px;
+        text-align: center;
+        line-height: 120%
+    }
+    
+    .awards-wrapper-images{
+        display: grid;
+        grid-template-columns: repeat(5, 2fr);
+        grid-template-rows: 195px;
+    }
+    
+    .awards-wrapper-images__jpg{
+        width: 150px;
+        height: 195px;
+        margin: 0 auto;
+    }
+    
+    .awards-wrapper-images__medal{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+}
+    
+

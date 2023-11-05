@@ -78,10 +78,12 @@
                 .pantheon-launch-wrapper-info-button__start_active:active{
                     border: 1px solid blue;
                     transition: 0.1s;
+                    box-shadow: 0px 0px 3px 0px; 
                 }
                 .pantheon-launch-wrapper-info-button__demo_active:active{
                     border: 1px solid blue;
                     transition: 0.1s;
+                    box-shadow: 0px 0px 3px 0px; 
                 }
             }
         }

@@ -1,0 +1,72 @@
+@import 'variables';
+
+.brand-wrapper{
+    width: $width-wrapper;
+    margin: 0 auto;
+
+    .brand-wrapper__info{
+        font-family: $popins;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+        margin-top: 140px;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+    
+    .brand-wrapper-logo{
+        display: flex;
+        justify-content: space-between;
+        width: $width-wrapper ;
+        margin: 0 auto;
+        margin-bottom: 120px;
+
+        .brand-wrapper-logo__google{
+            width: 150px;
+            height: 50.5px;
+            }
+            
+            .brand-wrapper-logo__drift{
+                width: 150px;
+                height: 32.83px;
+            }
+            
+            .brand-wrapper-logo__tableau{
+                width: 150px;
+                height: 32.25px;
+            }
+            
+            .brand-wrapper-logo__medechis{
+                width: 150px;
+                height: 43.97;
+            }
+            
+            .brand-wrapper-logo__button{
+                width: 150px;
+                height: 38.47px;
+                text-decoration: none;
+                text-align: center;
+                line-height: 38.47px;
+                font-family:$popins;
+                font-size: 1em;
+                font-weight: 700;
+                letter-spacing: .01em;
+                color: black;
+                border: 1px solid #6d6d78;
+                border-radius: 3px;
+            }
+            
+            .brand-wrapper-logo__button_hover:hover{
+                border-color: black;
+                transition: 0.7s;
+                background-color:#f3f3f3 ;  
+            }
+            
+            .brand-wrapper-logo__button_active:active{
+                transition: 0.1s;
+                border: 1px solid blue;
+                box-shadow: 0px 0px 3px 0px;  
+            }
+    }
+}
