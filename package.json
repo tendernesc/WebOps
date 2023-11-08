@@ -1,0 +1,17 @@
+{
+  "name": "webops",
+  "version": "1.0.0",
+  "description": "creating a site clone",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "author": "Alexandr Lehlik",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.2",
+    "parcel": "^2.10.2",
+    "sass": "^1.69.5"
+  }
+}
