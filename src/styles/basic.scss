@@ -1,0 +1,106 @@
+@import 'variables';
+
+.basic-wrapper{
+  width: $width-wrapper;
+  margin: 0 auto;
+  display: block;
+
+  .basic-wrapper-text{
+    width: 784px;
+    margin: 0 auto;
+    margin-top: 100px;
+    .basic-wrapper-text__drupal{
+      text-align: center;
+      font-family: $popins;
+      font-weight: 700;
+      line-height: 120%;
+      letter-spacing: normal;
+      font-size: 2.441em;
+      color: #23232D;
+      margin-bottom: 20px;
+    }
+    .basic-wrapper-text__project{
+      text-align: center;
+      font-weight: 400;
+      line-height: 140%;
+      font-family: $aleo;
+      font-size: 25px;
+      color: #6D6D78;
+    }
+  }
+  .basic-wrapper-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .basic-wrapper-content-info{
+      display: flex;
+      flex-direction: column;
+      width: 682.5px;
+      margin-top: 100px;
+      .basic-wrapper-content-info__managment{
+        font-family: $popins;
+        font-weight: 700;
+        letter-spacing: .04em;
+        line-height: 120%;
+        margin-block-end: 1rem;
+        margin-block-start: 0;
+        text-transform: uppercase;
+        color: #6D6D78;
+        font-size: 20px;
+      }
+      .basic-wrapper-content-info__audience{
+        font-size: 2.441em;
+        font-family: $popins;
+        font-weight: 800;
+        letter-spacing: normal;
+        line-height: 120%;
+        color: #23232D;
+        margin-bottom: 30px;
+      }
+      .basic-wrapper-content-info__text{
+        font-family: $popins;
+        font-size: 16px;
+        font-weight: 100;
+        letter-spacing: normal;
+        line-height: 170%;
+        margin-block-end: 1.25rem;
+        color: #23232D;
+      }
+      .basic-wrapper-content-info-link{
+        display: flex;
+        flex-direction:column;
+        row-gap: 0.64rem;
+        
+        .basic-wrapper-content-info-link__additional{
+          font-family: $popins;
+          font-size: 1.125rem;
+          font-weight: 600;
+          letter-spacing: .01em;
+          line-height: 120%;
+          padding: 0.25rem 0;
+          text-decoration: none;
+          color: #3017a1;
+        }
+        .basic-wrapper-content-info-link__additional_hover:hover{
+          text-decoration: underline;
+        }
+        .basic-wrapper-content-info-link__additional_after::after{
+          content: '  \279C';
+        }
+      }
+    }
+    
+    .basic-wrapper__img{
+      width: 475.5px;
+      height: 475.5px;
+      margin-top: 70px;
+    }
+    .basic-wrapper-content__img{
+      width: 475.5px;
+      height: 475.5px;
+      margin-top: 70px;
+    }
+  }
+}
+
