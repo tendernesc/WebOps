@@ -19,11 +19,15 @@
 
             .pantheon-launch-wrapper-info__wordpress{
                 font-family: $popins;
-                font-size: 48.832px;
+                font-size: 49.832px;
                 line-height: 120%;
-                margin-bottom: 25px
+                margin-bottom: 25px;
+                color: #23232D;
+                font-weight: 900;
+                letter-spacing: normal;
+                
             }
-            
+
             .pantheon-launch-wrapper-info__text{
                 font-family: $aleo;
                 color:#6d6d78;
@@ -78,7 +82,8 @@
                 .pantheon-launch-wrapper-info-button__start_active:active{
                     border: 1px solid blue;
                     transition: 0.1s;
-                    box-shadow: 0px 0px 3px 0px; 
+                    box-shadow: 0px 0px 3px 0px;
+                    background-color: #e9c928; 
                 }
                 .pantheon-launch-wrapper-info-button__demo_active:active{
                     border: 1px solid blue;
