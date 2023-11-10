@@ -1,0 +1,121 @@
+@import 'variables';
+
+.other-wrapper{
+  width: $width-wrapper;
+  margin: 0 auto;
+  display: block;
+
+  .other-wrapper-pole{
+    margin-top: 170px;
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    border-bottom: 1px solid #cfcfd8;
+   
+
+    .other-wrapper-pole-info{
+      display: flex;
+      flex-direction: column;
+      font-family: $popins;
+      margin-bottom: 5px;
+      margin-right: 25px;
+      
+      .other-wrapper-pole-info__name{
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: normal;
+        margin-block-end: 1.25rem;
+        margin-block-start: 0;
+        color: #23232D;
+        line-height: 170%;
+      }
+      .other-wrapper-pole-info__link{
+        text-decoration: none;
+        font-size: 14px;
+        color: #6d6d78;
+        margin-bottom: 20px;
+        line-height: 170%;
+      }
+      .other-wrapper-pole-info__link_hover:hover{
+        text-decoration: underline;
+        color: #6f54e8;
+      }
+      .other-wrapper-pole-info__contact{
+        color: #6d6d78;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 170%;
+        margin-bottom: 20px;
+        text-decoration: none;
+      }
+      .other-wrapper-pole-info__contact_hover:hover{
+        text-decoration: underline;
+      }
+      .other-wrapper-pole-info__phone{
+        color: #3017a1;
+        text-decoration: none;
+        line-height: 170%;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .other-wrapper-pole-info__phone_hover:hover{
+        text-decoration: underline;
+      }
+      .other-wrapper-pole-info-icon{
+        display: flex;
+        flex-direction: row;
+
+        .other-wrapper-pole-info-icon-link__img{
+          width:50px ;
+          height:50px;
+          margin-left: -10px;
+        }
+      }
+    }
+    .pole1{
+      width: 129.48px;
+    }
+    .pole2{
+      width: 176.19px;
+    }
+    .pole3{
+      width: 232.2px;
+    }
+    .pole4{
+      width: 165.64px;
+    }
+    .pole5{
+      width: 165px;
+      margin-left: 15px;
+    }
+    
+  }  
+
+  .other-wrapper-system{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 64px;
+
+    .other-wrapper-system__text{
+      font-family: $popins;
+      color: #6d6d78;
+      line-height: 1;
+      font-size: 14px;
+      font-weight: 100;
+    }
+    .other-wrapper-system__policy{
+      font-family: $popins;
+      color: #6d6d78;
+      line-height: 1;
+      font-size: 14px;
+      font-weight: 100;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    .other-wrapper-system__policy_hover:hover{
+      text-decoration: underline;
+      color: #6f54e8;
+    }
+  }
+}
