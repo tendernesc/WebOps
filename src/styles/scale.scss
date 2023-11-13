@@ -46,7 +46,6 @@
     .scale-wrapper-info-accordion-item_target {
       max-height: 0;
       overflow: hidden;
-      // transition: max-height 0.2s ease-out;
     }
   
     .scale-wrapper-info-accordion-item_toggle:checked + .scale-wrapper-info-accordion-item_trigger + .scale-wrapper-info-accordion-item_target {

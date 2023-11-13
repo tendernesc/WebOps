@@ -1,104 +1,102 @@
 @import 'variables';
 
-
 .pantheon-launch{
-    background-color: #f3f3f3;
-    width: 100%;
+  background-color: #f3f3f3;
+  width: 100%;
 
-    .pantheon-launch-wrapper{
-        width: $width-wrapper;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        justify-content: space-between;
+  .pantheon-launch-wrapper{
+    width: $width-wrapper;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
 
-        .pantheon-launch-wrapper-info{
-            width: 682.5px;
-            margin-top: 110px;
+    .pantheon-launch-wrapper-info{
+      width: 682.5px;
+      margin-top: 130px;
 
-            .pantheon-launch-wrapper-info__wordpress{
-                font-family: $popins;
-                font-size: 49.832px;
-                line-height: 120%;
-                margin-bottom: 25px;
-                color: #23232D;
-                font-weight: 900;
-                letter-spacing: normal;
-                
+        .pantheon-launch-wrapper-info__wordpress{
+            font-family: $popins;
+            font-size: 49.832px;
+            line-height: 120%;
+            margin-bottom: 25px;
+            color: #23232D;
+            font-weight: 900;
+            letter-spacing: normal;  
             }
 
-            .pantheon-launch-wrapper-info__text{
-                font-family: $aleo;
-                color:#6d6d78;
-                font-weight: 400;
-                line-height: 140%;
-                margin-bottom: 20px;
-                font-size:31.248px
-            }
-        
-            .pantheon-launch-wrapper-info-button{
-                display: flex;
-                flex-direction: row;
-                margin-bottom: 40px;
-
-                .pantheon-launch-wrapper-info-button__start{
-                    font-size: 20px;
-                    font-family: $popins;
-                    margin-right: 16px;
-                    width: 160.7px;
-                    height: 54px;
-                    background-color: #ffdc28;
-                    border: 1px solid #ffdc28;
-                    text-decoration: none;
-                    color:black;
-                    text-align: center;
-                    line-height: 54px;
-                    border-radius: 3px;
-                }
-                
-                .pantheon-launch-wrapper-info-button__demo{
-                    font-size: 20px;
-                    font-family: $popins;
-                    margin-right: 10px;
-                    width: 216.31px;
-                    height: 54px;
-                    background-color: #f3f3f3;;
-                    text-decoration: none;
-                    color:black;
-                    text-align: center;
-                    line-height: 54px;
-                    border: 1px solid #6d6d78;
-                    border-radius: 3px;
-                }
-                .pantheon-launch-wrapper-info-button__start_hover:hover{
-                    background-color: #ffe76e;
-                    transition: 0.45s;
-                }
-                .pantheon-launch-wrapper-info-button__demo_hover:hover{
-                    background-color: white;
-                    transition: 0.5s;
-                }
-                .pantheon-launch-wrapper-info-button__start_active:active{
-                    border: 1px solid blue;
-                    transition: 0.1s;
-                    box-shadow: 0px 0px 3px 0px;
-                    background-color: #e9c928; 
-                }
-                .pantheon-launch-wrapper-info-button__demo_active:active{
-                    border: 1px solid blue;
-                    transition: 0.1s;
-                    box-shadow: 0px 0px 3px 0px; 
-                }
-            }
+        .pantheon-launch-wrapper-info__text{
+            font-family: $aleo;
+            color:#6d6d78;
+            font-weight: 400;
+            line-height: 140%;
+            margin-bottom: 20px;
+            font-size:31.248px
         }
         
-        .pantheon-launch-wrapper-info__image{
+        .pantheon-launch-wrapper-info-button{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 40px;
+
+            .pantheon-launch-wrapper-info-button__start{
+                font-size: 20px;
+                font-family: $popins;
+                margin-right: 16px;
+                width: 160.7px;
+                height: 54px;
+                background-color: #ffdc28;
+                border: 1px solid #ffdc28;
+                text-decoration: none;
+                color:black;
+                text-align: center;
+                line-height: 54px;
+                border-radius: 3px;
+            }
+                
+            .pantheon-launch-wrapper-info-button__demo{
+                font-size: 20px;
+                font-family: $popins;
+                margin-right: 10px;
+                width: 216.31px;
+                height: 54px;
+                background-color: #f3f3f3;;
+                text-decoration: none;
+                color:black;
+                text-align: center;
+                line-height: 54px;
+                border: 1px solid #6d6d78;
+                border-radius: 3px;
+            }
+            .pantheon-launch-wrapper-info-button__start_hover:hover{
+                background-color: #ffe76e;
+                transition: 0.45s;
+            }
+            .pantheon-launch-wrapper-info-button__demo_hover:hover{
+                background-color: white;
+                transition: 0.5s;
+            }
+            .pantheon-launch-wrapper-info-button__start_active:active{
+                border: 1px solid blue;
+                transition: 0.1s;
+                box-shadow: 0px 0px 3px 0px;
+                background-color: #e9c928; 
+            }
+            .pantheon-launch-wrapper-info-button__demo_active:active{
+                border: 1px solid blue;
+                transition: 0.1s;
+                box-shadow: 0px 0px 3px 0px; 
+            }
+        }
+    }
+        
+    .pantheon-launch-wrapper-info__image{
             object-fit: cover;
             width: 476px;
             height: 371px;
-            margin-top: 130px;
-        }
+            margin-top: 170px;
+    }
     }
 }
 
