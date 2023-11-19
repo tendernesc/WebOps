@@ -19,19 +19,24 @@
         display: grid;
         grid-template-columns: repeat(5, 2fr);
         grid-template-rows: 195px;
-    }
-    
-    .awards-wrapper-images__jpg{
-        width: 150px;
-        height: 195px;
-        margin: 0 auto;
-    }
-    
-    .awards-wrapper-images__medal{
-        width: 150px;
-        height: 150px;
-        margin: 0 auto;
+
+        .awards-wrapper-images__medal{
+            width: 150px;
+            height: 195px;
+            margin: 0 auto;
+        }
     }
 }
-    
 
+
+@media (max-width:1326px){
+    .awards-wrapper{
+      width: 90%;
+    }
+}
+@media (max-width:980px){
+    .awards-wrapper-images{
+        display: flex !important;
+        flex-wrap: wrap;
+      } 
+}

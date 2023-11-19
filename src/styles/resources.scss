@@ -38,14 +38,10 @@
     }
     
     .resources-wrapper-info_link_hover:hover{
-      background-color: #ffe76e;
-      transition: 0.45s;
+      @include button_hover_yellow
     }
-    .resources-wrapper-info_link_hover:active{
-      border: 1px solid blue;
-      transition: 0.1s;
-      box-shadow: 0px 0px 3px 0px;
-      background-color: #e9c928; 
+    .resources-wrapper-info_link_active:active{
+      @include button_active_yellow;
     }
   }
   .resources-wrapper-column{
@@ -155,5 +151,38 @@
       background-color: #6f54e8; 
     }
   }
+}
 
+@media (max-width:1220px){
+  .resources-wrapper{
+    width: 90%;
+  }
+  .resources-wrapper-column{
+    display: flex;
+    flex-wrap: wrap;
+    width: initial !important;
+  }
+  .resources-wrapper-column-box{
+   margin-top: 20px;
+  }
+}
+
+@media (max-width:360px){
+  .resources-wrapper-column-box-link__img{
+    width: 250px !important;
+    height: 135px !important;
+    padding-left: 30px !important;
+  }
+  .resources-wrapper-column-box{
+    width: 290.23px !important;
+  }
+  .resources-wrapper-column-box-text{
+    width: 260px !important;
+  }
+  .resources-wrapper-column-box-text__more{
+    width: 250px !important; 
+  }
+  .resources-wrapper-column-box-text__more_adw{
+    width: 250px !important; 
+  }
 }

@@ -5,153 +5,228 @@
   margin: 0 auto;
   display: block;
 
-  .team-wrapper-text__designed{
-  text-align: center;
-  font-family: $popins;
-  font-weight: 700;
-  line-height: 120%;
-  letter-spacing: normal;
-  font-size: 2.441em;
-  color: #23232D;
-  margin-bottom: 20px;
+    .team-wrapper-text__designed{
+    text-align: center;
+    font-family: $popins;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: normal;
+    font-size: 2.441em;
+    color: #23232D;
+    margin-bottom: 20px;
+  }
+  .team-wrapper-text__plans{
+    text-align: center;
+    font-weight: 400;
+    line-height: 140%;
+    font-family: $aleo;
+    font-size: 25px;
+    color: #6D6D78;
+    margin-bottom: 40px;
+  }
+
+  .team-wrapper-teamwork{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    border-bottom: 1px solid #d0d0d4;
+    align-items: center;
+
+    .team-wrapper-teamwork__info{
+      font-family: $popins;
+      font-weight: 500;
+      line-height: 1.15;
+      color: #454545;
+      font-size: 20px;
+      width: 240px;
+      text-align: center;
+      padding-bottom: 11px;
+    }
+    
+    .team-wrapper-teamwork__info_defolt{
+      color: #5f41e5;
+      font-family: $popins;
+      font-weight: 500;
+      line-height: 1.15;
+      font-size: 20px;
+      border-bottom: 3.2px solid #5f41e5;
+      width: 240px;
+      text-align: center;
+      padding-bottom: 11px;
+    }
+    
+    .team-wrapper-teamwork__info_hover:hover{
+      color: #5f41e5;
+      cursor: pointer;
+    }
+    
+    .team-wrapper-teamwork__info_hover:active{
+      border-bottom: 3.2px solid #5f41e5;
+      padding-bottom: 11px;
+    }
+    
+    .team-wrapper-teamwork__info_defolt_hover:hover{
+      cursor: pointer;
+    }
+  }
+
+  .team-wrapper-together{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .team-wrapper-together-advantages{
+      display: flex;
+      width: 657.5px;
+      flex-direction: column;
+
+      .team-wrapper-together-advantages__faster{
+        font-family: $popins;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: normal;
+        font-size: 2.441em;
+        color: #333333;
+        margin-bottom: 50px;
+      }
+    
+      .team-wrapper-together-advantages-list{
+        line-height: 170%;
+        font-family: $popins;
+        margin-left: 15px;
+
+        .team-wrapper-together-advantages-list__text{
+          width: 657.5px;
+          margin-bottom: 25px;
+          font-size: 16px;
+          font-weight:200;
+        }
+      }
+      .team-wrapper-together-advantages-list__link{
+        font-weight: bold;
+        text-decoration: none;
+        color: #0f62fe
+      }
+    
+      .team-wrapper-together-advantages-list__adw{
+        color: #0f62fe;
+        text-decoration: none;
+      }
+    
+      .team-wrapper-together-advantages-list__adw_hover:hover{
+        text-decoration: underline;
+      }
+    
+      .team-wrapper-together-advantages-list__link_hover:hover{
+        text-decoration: underline;
+      }
+    
+      .team-wrapper-together-advantages-link{
+        display: flex;
+        flex-direction: column;
+
+        .team-wrapper-together-advantages-link__additional{
+          font-family: $popins;
+          font-size: 1.125rem;
+          font-weight: 600;
+          letter-spacing: .01em;
+          line-height: 120%;
+          padding: 0.25rem 0;
+          text-decoration: none;
+          color: #3017a1;
+        }
+      
+        .team-wrapper-together-advantages-link__additional_hover:hover{
+          text-decoration: underline;
+        }
+      
+        .team-wrapper-together-advantages-link__additional_after::after{
+          content: '  \279C';
+        }
+      }
+    }
+
+    .team-wrapper-together__img{
+      margin-top: 65px;
+      width: 475.5px;
+      height: 475.5px;
+    }
+    .team-wrapper-together__img_adaptive{
+      display: none;
+      margin-top: 65px;
+      width: 475.5px;
+      height: 475.5px;
+    }
+  }
 }
 
-.team-wrapper-text__plans{
-  text-align: center;
-  font-weight: 400;
-  line-height: 140%;
-  font-family: $aleo;
-  font-size: 25px;
-  color: #6D6D78;
-  margin-bottom: 40px;
+@media (max-width:1250px){
+  .team-wrapper{
+    width: 90% ;
+  }
+  .team-wrapper-together__img{
+    width:  400px !important;
+    height: 400px !important; 
+  }
 }
 
-.team-wrapper-teamwork{
-  display: flex;
-  justify-content:space-around;
-  flex-direction: row;
-  border-bottom: 1px solid #d0d0d4;
-  align-items: center;
+@media (max-width:1150px){
+  .team-wrapper-together__img{
+    width:  360px !important;
+    height: 360px !important; 
+  }
+  .team-wrapper-together .team-wrapper-together-advantages .team-wrapper-together-advantages-list__text{
+    max-width: 100% !important;
+    width: auto !important; 
+  }
 }
 
-.team-wrapper-teamwork__info{
-  font-family: $popins;
-  font-weight: 500;
-  line-height: 1.15;
-  color: #454545;
-  font-size: 20px;
-  width: 240px;
-  text-align: center;
-  padding-bottom: 11px;
+@media (max-width:970px){
+  .team-wrapper-together__img{
+    width:  320px !important;
+    height: 320px !important; 
+  }
 }
 
-.team-wrapper-teamwork__info_defolt{
-  color: #5f41e5;
-  font-family: $popins;
-  font-weight: 500;
-  line-height: 1.15;
-  font-size: 20px;
-  border-bottom: 3.2px solid #5f41e5;
-  width: 240px;
-  text-align: center;
-  padding-bottom: 11px;
+@media (max-width:870px){
+  .team-wrapper-together__img{
+    width:  280px !important;
+    height: 280px !important;  
+  }
+}
+@media (max-width:770px){
+  .team-wrapper-together__img{
+    width:  250px !important;
+    height: 250px !important;  
+  }
 }
 
-.team-wrapper-teamwork__info_hover:hover{
-  color: #5f41e5;
-  cursor: pointer;
+@media (max-width:700px){
+  .team-wrapper-teamwork__info{
+    display: none;
+  }
+  .team-wrapper-teamwork__info_defolt{
+    width: 100% !important;
+  }
+  .team-wrapper-together__img{
+    display: none;
+  }
+  .team-wrapper-together__img_adaptive{
+    display:inline-block !important;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important; 
+  }
+  .team-wrapper-together{
+    flex-direction: column !important;
+    justify-content: center;
+  }
+  .team-wrapper .team-wrapper-together .team-wrapper-together-advantages {
+    max-width: 100% !important;
+    width: auto !important; 
+  }
+  .team-wrapper-teamwork__info_defolt{
+    text-align: left !important;
+  }
 }
-
-.team-wrapper-teamwork__info_hover:active{
-  border-bottom: 3.2px solid #5f41e5;
-  padding-bottom: 11px;
-}
-
-.team-wrapper-teamwork__info_defolt_hover:hover{
-  cursor: pointer;
-}
-
-.team-wrapper-together{
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.team-wrapper-together-advantages{
-  width: 657.5px;
-}
-
-.team-wrapper-together-advantages__faster{
-  font-family: $popins;
-  font-weight: 700;
-  line-height: 120%;
-  letter-spacing: normal;
-  font-size: 2.441em;
-  color: #333333;
-  margin-bottom: 50px;
-}
-
-.team-wrapper-together-advantages-list{
-  line-height: 170%;
-  font-family: $popins;
-  margin-left: 15px;
-}
-
-.team-wrapper-together-advantages-list__text{
-  width: 657.5px;
-  margin-bottom: 25px;
-  font-size: 16px;
-  font-weight:200;
-}
-
-.team-wrapper-together__img{
-  margin-top: 65px;
-  width: 475.5px;
-  height: 475.5px;
-}
-
-.team-wrapper-together-advantages-list__link{
-  font-weight: bold;
-  text-decoration: none;
-  color: #0f62fe
-}
-
-.team-wrapper-together-advantages-list__adw{
-  color: #0f62fe;
-  text-decoration: none;
-}
-
-.team-wrapper-together-advantages-list__adw_hover:hover{
-  text-decoration: underline;
-}
-
-.team-wrapper-together-advantages-list__link_hover:hover{
-  text-decoration: underline;
-}
-
-.team-wrapper-together-advantages-link{
-  display: flex;
-  flex-direction: column;
-}
-
-.team-wrapper-together-advantages-link__additional{
-  font-family: $popins;
-  font-size: 1.125rem;
-  font-weight: 600;
-  letter-spacing: .01em;
-  line-height: 120%;
-  padding: 0.25rem 0;
-  text-decoration: none;
-  color: #3017a1;
-}
-
-.team-wrapper-together-advantages-link__additional_hover:hover{
-  text-decoration: underline;
-}
-
-.team-wrapper-together-advantages-link__additional_after::after{
-  content: '  \279C';
-}
-}
-
-
